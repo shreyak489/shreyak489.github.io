@@ -1,7 +1,0 @@
----
-title: "Upcoming Blog"
-date: 2026-01-16
-description: "Will be updating this section with some of my personal writing on topics that interest me, as well as any academic papers."
-categories: [Computer Science, Mathematics, Finance]
----
-

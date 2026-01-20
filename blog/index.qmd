@@ -4,5 +4,5 @@ listing:
   contents: .
   sort: "date desc"
   type: default
-  fields: [date, title, description]
+  fields: [date, title, description, categories]
 ---
