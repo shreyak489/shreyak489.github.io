@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Shreya Kuthpadi | Portfolio</title>
+<link>https://shreyak489.github.io/shreya_kuthpadi-portfolio/blog.html</link>
+<atom:link href="https://shreyak489.github.io/shreya_kuthpadi-portfolio/blog.xml" rel="self" type="application/rss+xml"/>
+<description></description>
+<generator>quarto-1.9.38</generator>
+<lastBuildDate>Wed, 18 Jun 2025 04:00:00 GMT</lastBuildDate>
+<item>
+  <title>Logistic Regression</title>
+  <link>https://shreyak489.github.io/shreya_kuthpadi-portfolio/posts/multiple-linear-regression/logistic-regression/</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="what-is-logistic-regression" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-logistic-regression">What is Logistic Regression?</h2>
+<p>Logistic regression is a little different from multiple linear regression. It is a supervised learning technique used for classification problems, and is&nbsp;used in the 2d world.</p>
+<section id="linear-vs-logistic-regression" class="level3">
+<h3 class="anchored" data-anchor-id="linear-vs-logistic-regression">Linear vs Logistic Regression</h3>
+<p>But wait… why can’t we use linear regression instead if it is 2d? That is because some problems have categorical variables, such as yes/no, veg/non-veg, etc, instead of continuous values. In that case, you need logistic regression because it is used for binary classification where the output can be one of two possible categories, and uses a sigmoid function to convert inputs into a probability value between 0 and 1. On the contrary, a linear regression model can output impossible values, such as decimals or negative values.&nbsp;</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th><strong>Linear Regression</strong></th>
+<th><strong>Logistic Regression</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Purpose</strong></td>
+<td>Regression</td>
+<td>Classification</td>
+</tr>
+<tr class="even">
+<td><strong>Predicts</strong></td>
+<td>Continuous values</td>
+<td>A probability (0 or 1)</td>
+</tr>
+<tr class="odd">
+<td><strong>Output</strong></td>
+<td>Can be any real number</td>
+<td>Bounded between 0 and 1</td>
+</tr>
+<tr class="even">
+<td><strong>Formula</strong></td>
+<td><img src="https://latex.codecogs.com/png.latex?y%20=%20mx%20+%20b"></td>
+<td><img src="https://latex.codecogs.com/png.latex?%5Ctext%7Bsigmoid%7D(z)%20=%20%5Cfrac%7B1%7D%7B1%20+%20e%5E%7B-z%7D%7D"></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="logistic-regression-equation-and-example" class="level3">
+<h3 class="anchored" data-anchor-id="logistic-regression-equation-and-example">Logistic Regression Equation and Example</h3>
+<p>To think about it simply, linear regression predicts how much, while logistic regression predicts which class (hence probabilities). Take a look at the sigmoid part of the logistic regression formula. That is what the graph looks like: a sigmoid, or a graph that resembles the letter “s”.&nbsp;</p>
+<p>Let’s take a closer look into the equation. The variable <img src="https://latex.codecogs.com/png.latex?z"> is basically a weighted sum of the inputs, which can be written as:</p>
+<p><img src="https://latex.codecogs.com/png.latex?z%20=%20%5Cbeta_0%20+%20%5Cbeta_1%20x"></p>
+<p>More generally, any number of components can be added. Conceptually, <img src="https://latex.codecogs.com/png.latex?z"> can be thought of as a score the model computes before turning it into a probability, where each feature <img src="https://latex.codecogs.com/png.latex?x_i"> contributes to the score, and each coefficient <img src="https://latex.codecogs.com/png.latex?%5Cbeta_i"> tells you how important that feature is.</p>
+<p>The best way to understand this is through an example. Let’s assume that you want to predict whether a student passes an exam based on hours studied. Given our previous equation for <img src="https://latex.codecogs.com/png.latex?z">, let <img src="https://latex.codecogs.com/png.latex?x"> be the hours studied, and <img src="https://latex.codecogs.com/png.latex?%5Cbeta_0"> and <img src="https://latex.codecogs.com/png.latex?%5Cbeta_1"> be learned coefficients. Learned coefficients are the numerical values that an algorithm calculates given the dataset. The sigmoid function, after replacing <img src="https://latex.codecogs.com/png.latex?z"> with the equation we found, would look like this:</p>
+<p><img src="https://latex.codecogs.com/png.latex?p(y%20=%201%20%5Cmid%20x)%20=%20%5Cfrac%7B1%7D%7B1%20+%20e%5E%7B-(%5Cbeta_0%20+%20%5Cbeta_1%20x)%7D%7D"></p>
+<p>However, given that the name of this algorithm is logistic regression, this equation does not look logistic. With some rewriting, the model is actually linear in the log-odds (called a logit):</p>
+<p><img src="https://latex.codecogs.com/png.latex?%5Clog%5Cleft(%5Cfrac%7Bp%7D%7B1-p%7D%5Cright)%20=%20%5Cbeta_0%20+%20%5Cbeta_1%20x"></p>
+<p>Let’s say the model learns values <img src="https://latex.codecogs.com/png.latex?%5Cbeta_0%20=%20-4"> and <img src="https://latex.codecogs.com/png.latex?%5Cbeta_1%20=%200.8">. For a student who studies for 8 hours, if you plug all of these variables into the equation for <img src="https://latex.codecogs.com/png.latex?z">, you get a score of <img src="https://latex.codecogs.com/png.latex?2.4">, and then applying the sigmoid function, you get a value of around <img src="https://latex.codecogs.com/png.latex?0.917">. This means that the student has a <strong>91.7% chance</strong> of passing the exam.</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>Machine Learning</category>
+  <category>Statistics</category>
+  <guid>https://shreyak489.github.io/shreya_kuthpadi-portfolio/posts/multiple-linear-regression/logistic-regression/</guid>
+  <pubDate>Wed, 18 Jun 2025 04:00:00 GMT</pubDate>
+  <media:content url="https://shreyak489.github.io/shreya_kuthpadi-portfolio/posts/multiple-linear-regression/logistic-regression/thumbnaillr.png" medium="image" type="image/png" height="88" width="144"/>
+</item>
+<item>
+  <title>Multiple Linear Regression</title>
+  <link>https://shreyak489.github.io/shreya_kuthpadi-portfolio/posts/multiple-linear-regression/</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="what-is-linear-regression" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-linear-regression">What is linear regression?</h2>
+<p>Before diving into multiple linear regression, let’s dip our toes into linear regression by itself. To put it simply, linear regression creates the line of best fit through 2D data, a concept you probably remember from any basic statistics or early math course. After plotting a number of points on a graph, you draw a line through them using what’s called the least squares approach, which finds the line that minimizes the overall distance between itself and every point. So how does multiple linear regression differ? It takes us from that flat 2D world into 3D, and then 4D, 5D, 6D, and beyond.</p>
+<p>Multiple linear regression is a supervised learning technique used to predict a single numerical outcome by analyzing relationships between multiple input features at once. Take house prices as an example. You don’t have to limit yourself to just one factor like size. Instead, you can factor in size, location, school district quality, and more, all in the same model.</p>
+<p>This is where things get interesting with larger datasets. Manually picking and choosing which columns or factors to include works fine when you’re dealing with a small, simple dataset, but it quickly becomes tiresome and impractical as things scale up. With something like financial market data, where you might have dozens or hundreds of potential variables, you can’t realistically eyeball which ones matter. That’s when automated feature selection becomes necessary to identify which variables actually move the needle on your output.</p>
+<p>So what does this actually look like under the hood? At its core, multiple linear regression is just an extension of the simple equation you’d use for a single line: y equals some intercept plus a coefficient times your input, except now you have several inputs, each with its own coefficient. Think of these coefficients as weights that tell you how much pull each factor has on the outcome, while everything else stays constant. Going back to the house price example, if the coefficient for size is large and positive, size has a strong, direct relationship with price. If the coefficient for distance from a major city is negative, price tends to drop the farther out you go.</p>
+<p>Let’s take a look at the equation for multiple linear regression.&nbsp;</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0Ay%20=%20%5Cbeta_0%20+%20%5Cbeta_1%20x_1%20+%20%5Cbeta_2%20x_2%20+%20%5Ccdots%20+%20%5Cbeta_n%20x_n%0A"></p>
+<p>This models a continuous outcome y as a linear combination of multiple input variables. Each coefficient represents how much the output changes when that feature increases by one unit (holding all other variables constant), while b0 is the intercept or baseline value. The model learns these coefficients from data by minimizing the difference between predicted and actual values.&nbsp;</p>
+<p>Multiple regression allows you to isolate each variable’s effect and see which ones have more pull. One caveat worth keeping in mind: not every variable in your model is pulling its weight, some might barely move the needle while others overlap too much with each other, which is usually the next thing to evaluate once your model is built.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>Machine Learning</category>
+  <category>Statistics</category>
+  <guid>https://shreyak489.github.io/shreya_kuthpadi-portfolio/posts/multiple-linear-regression/</guid>
+  <pubDate>Sun, 01 Jun 2025 04:00:00 GMT</pubDate>
+  <media:content url="https://shreyak489.github.io/shreya_kuthpadi-portfolio/posts/multiple-linear-regression/thumbnailmlr.jpg" medium="image" type="image/jpeg"/>
+</item>
+</channel>
+</rss>
