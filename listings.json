@@ -1,15 +1,15 @@
 [
   {
+    "listing": "/projects.html",
+    "items": [
+      "/projects/ai-project.html"
+    ]
+  },
+  {
     "listing": "/blog.html",
     "items": [
       "/posts/multiple-linear-regression/logistic-regression/index.html",
       "/posts/multiple-linear-regression/index.html"
-    ]
-  },
-  {
-    "listing": "/projects.html",
-    "items": [
-      "/projects/ai-project.html"
     ]
   }
 ]

@@ -6,14 +6,14 @@
       version="2.0">
 <channel>
 <title>Shreya Kuthpadi | Portfolio</title>
-<link>https://shreyak489.github.io/shreya_kuthpadi-portfolio/blog.html</link>
-<atom:link href="https://shreyak489.github.io/shreya_kuthpadi-portfolio/blog.xml" rel="self" type="application/rss+xml"/>
+<link>https://shreyak489.github.io/blog.html</link>
+<atom:link href="https://shreyak489.github.io/blog.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.9.38</generator>
-<lastBuildDate>Wed, 18 Jun 2025 04:00:00 GMT</lastBuildDate>
+<lastBuildDate>Wed, 18 Jun 2025 00:00:00 GMT</lastBuildDate>
 <item>
   <title>Logistic Regression</title>
-  <link>https://shreyak489.github.io/shreya_kuthpadi-portfolio/posts/multiple-linear-regression/logistic-regression/</link>
+  <link>https://shreyak489.github.io/posts/multiple-linear-regression/logistic-regression/</link>
   <description><![CDATA[ 
 
 
@@ -81,13 +81,13 @@
  ]]></description>
   <category>Machine Learning</category>
   <category>Statistics</category>
-  <guid>https://shreyak489.github.io/shreya_kuthpadi-portfolio/posts/multiple-linear-regression/logistic-regression/</guid>
-  <pubDate>Wed, 18 Jun 2025 04:00:00 GMT</pubDate>
-  <media:content url="https://shreyak489.github.io/shreya_kuthpadi-portfolio/posts/multiple-linear-regression/logistic-regression/thumbnaillr.png" medium="image" type="image/png" height="88" width="144"/>
+  <guid>https://shreyak489.github.io/posts/multiple-linear-regression/logistic-regression/</guid>
+  <pubDate>Wed, 18 Jun 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://shreyak489.github.io/posts/multiple-linear-regression/logistic-regression/thumbnaillr.png" medium="image" type="image/png" height="88" width="144"/>
 </item>
 <item>
   <title>Multiple Linear Regression</title>
-  <link>https://shreyak489.github.io/shreya_kuthpadi-portfolio/posts/multiple-linear-regression/</link>
+  <link>https://shreyak489.github.io/posts/multiple-linear-regression/</link>
   <description><![CDATA[ 
 
 
@@ -110,9 +110,9 @@
  ]]></description>
   <category>Machine Learning</category>
   <category>Statistics</category>
-  <guid>https://shreyak489.github.io/shreya_kuthpadi-portfolio/posts/multiple-linear-regression/</guid>
-  <pubDate>Sun, 01 Jun 2025 04:00:00 GMT</pubDate>
-  <media:content url="https://shreyak489.github.io/shreya_kuthpadi-portfolio/posts/multiple-linear-regression/thumbnailmlr.jpg" medium="image" type="image/jpeg"/>
+  <guid>https://shreyak489.github.io/posts/multiple-linear-regression/</guid>
+  <pubDate>Sun, 01 Jun 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://shreyak489.github.io/posts/multiple-linear-regression/thumbnailmlr.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>
