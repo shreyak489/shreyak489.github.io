@@ -4,11 +4,20 @@ title: "About Me"
 
 ![](headshot.jpg){width=200px style="border-radius: 50%; float: left; margin-right: 2rem; margin-bottom: 1rem;"}
 
-Hi, I'm Shreya Kuthpadi, a student at Rutgers University double majoring in Computer Science and Mathematics. I am passionate about how data, math, and technology come together to solve real-world problems, especially in areas like artificial intelligence and fintech.
 
-I'm particularly drawn to quantitative and data-driven roles, where I can use mathematical thinking and programming to analyze patterns, understand risk, and make informed decisions. At the same time, I'm still exploring different paths within this space, including data science, analytics, and other tech roles.
+Hi, I’m Shreya Kuthpadi, a student at Rutgers University double majoring in Computer Science and Mathematics. I’m really interested in how data, math, and technology come together to solve real-world problems, especially in areas like artificial intelligence and fintech.
 
-I am open to internships and research opporutinities where I can explore new ideas, and work with others on things that have real impact.
+I’m naturally drawn to quantitative and data-driven work, where I can use mathematical thinking and programming to understand patterns, analyze problems, and make informed decisions. At the same time, I’m still exploring different paths within this space, including data science, analytics, and other tech-focused roles, and I’m excited to keep learning what fits best.
+
+Through my coursework and personal work, I’ve started to build a stronger foundation in both theoretical and applied concepts, and I enjoy the process of working through complex problems and figuring things out step by step.
+
+I’m currently looking for internships and research opportunities where I can continue developing my skills, explore new ideas, and collaborate on projects that have real impact.
+
+## Relevant Coursework
+
+Some of the courses that have shaped my academic interests so far include Discrete Structures I, Data Structures, Differential Equations, and Linear Algebra. 
+
+These classes have given me a strong foundation in both computational thinking and mathematical reasoning. I’ve especially enjoyed seeing how concepts from linear algebra and discrete math connect to areas like algorithms, data analysis, and more advanced topics I’m excited to explore in the future.
 
 <div style="clear: both;"></div>
 
