@@ -1,0 +1,3 @@
+- source: project
+  github-pages:
+    branch: gh-pages

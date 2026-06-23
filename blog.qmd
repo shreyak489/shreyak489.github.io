@@ -1,0 +1,10 @@
+---
+title: "Blog"
+listing:
+  contents: posts
+  type: grid
+  grid-columns: 2
+  fields: [image, title, description, date, categories]
+  sort: "date desc"
+  feed: true
+---

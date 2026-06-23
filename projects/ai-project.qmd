@@ -1,0 +1,19 @@
+---
+title: "AI4ALL Project"
+description: "Coming Soon!"
+categories: [AI, Python, Machine Learning]
+date: 2025-08-01
+image: project-thumbnail.png
+---
+
+## Overview
+
+Coming Soon!
+
+## Tech Stack
+
+Python, TensorFlow, etc.
+
+## Links
+
+[GitHub](https://github.com/shreyak489/your-repo)

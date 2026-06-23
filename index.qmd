@@ -1,0 +1,25 @@
+---
+title: "About Me"
+---
+
+![](headshot.jpg){width=200px style="border-radius: 50%; float: left; margin-right: 2rem; margin-bottom: 1rem;"}
+
+Hi, I'm Shreya Kuthpadi, a student at Rutgers University double majoring in Computer Science and Mathematics. I am passionate about how data, math, and technology come together to solve real-world problems, especially in areas like artificial intelligence and fintech.
+
+I'm particularly drawn to quantitative and data-driven roles, where I can use mathematical thinking and programming to analyze patterns, understand risk, and make informed decisions. At the same time, I'm still exploring different paths within this space, including data science, analytics, and other tech roles.
+
+I am open to internships and research opporutinities where I can explore new ideas, and work with others on things that have real impact.
+
+<div style="clear: both;"></div>
+
+## {.text-center}
+
+**Contact Me**
+
+::: {.text-center}
+
+[{{< fa envelope size=2x >}}](mailto:shreya.kuthpadi@rutgers.edu){target="_blank"}  &nbsp; &nbsp;
+[{{< fa brands linkedin size=2x >}}](https://linkedin.com/in/shreya-kuthpadi-44a443263){target="_blank"} &nbsp; &nbsp;
+[{{< fa brands github size=2x >}}](https://github.com/shreyak489){target="_blank"}
+
+:::

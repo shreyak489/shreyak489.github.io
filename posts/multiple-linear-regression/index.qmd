@@ -1,0 +1,27 @@
+---
+title: "Multiple Linear Regression"
+description: "A simple explanation on a seemingly complicated topic."
+date: 2025-06-01
+categories: [Machine Learning, Statistics]
+image: thumbnailmlr.jpg
+---
+
+## What is linear regression?
+
+Before diving into multiple linear regression, let's dip our toes into linear regression by itself. To put it simply, linear regression creates the line of best fit through 2D data, a concept you probably remember from any basic statistics or early math course. After plotting a number of points on a graph, you draw a line through them using what's called the least squares approach, which finds the line that minimizes the overall distance between itself and every point. So how does multiple linear regression differ? It takes us from that flat 2D world into 3D, and then 4D, 5D, 6D, and beyond.
+
+Multiple linear regression is a supervised learning technique used to predict a single numerical outcome by analyzing relationships between multiple input features at once. Take house prices as an example. You don't have to limit yourself to just one factor like size. Instead, you can factor in size, location, school district quality, and more, all in the same model.
+
+This is where things get interesting with larger datasets. Manually picking and choosing which columns or factors to include works fine when you're dealing with a small, simple dataset, but it quickly becomes tiresome and impractical as things scale up. With something like financial market data, where you might have dozens or hundreds of potential variables, you can't realistically eyeball which ones matter. That's when automated feature selection becomes necessary to identify which variables actually move the needle on your output.
+
+So what does this actually look like under the hood? At its core, multiple linear regression is just an extension of the simple equation you'd use for a single line: y equals some intercept plus a coefficient times your input, except now you have several inputs, each with its own coefficient. Think of these coefficients as weights that tell you how much pull each factor has on the outcome, while everything else stays constant. Going back to the house price example, if the coefficient for size is large and positive, size has a strong, direct relationship with price. If the coefficient for distance from a major city is negative, price tends to drop the farther out you go.
+
+Let's take a look at the equation for multiple linear regression. 
+
+$$
+y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \cdots + \beta_n x_n
+$$
+
+This models a continuous outcome y as a linear combination of multiple input variables. Each coefficient represents how much the output changes when that feature increases by one unit (holding all other variables constant), while b0 is the intercept or baseline value. The model learns these coefficients from data by minimizing the difference between predicted and actual values. 
+
+Multiple regression allows you to isolate each variable's effect and see which ones have more pull. One caveat worth keeping in mind: not every variable in your model is pulling its weight, some might barely move the needle while others overlap too much with each other, which is usually the next thing to evaluate once your model is built.

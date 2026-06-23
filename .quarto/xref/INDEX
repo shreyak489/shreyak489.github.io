@@ -1,0 +1,23 @@
+{
+  "index.qmd": {
+    "index.html": "652a08c1"
+  },
+  "about.qmd": {
+    "about.html": "32745ac0"
+  },
+  "projects/ai-project.qmd": {
+    "ai-project.html": "c9249eb9"
+  },
+  "projects.qmd": {
+    "projects.html": "f745b8ef"
+  },
+  "posts/multiple-linear-regression/index.qmd": {
+    "index.html": "7632b01d"
+  },
+  "blog.qmd": {
+    "blog.html": "a49c3943"
+  },
+  "posts/multiple-linear-regression/logistic-regression/index.qmd": {
+    "index.html": "1fd7083a"
+  }
+}

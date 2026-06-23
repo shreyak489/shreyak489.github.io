@@ -1,0 +1,86 @@
+[
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Logistic Regression\n\n\n\nMachine Learning\n\nStatistics\n\n\n\nAn important AI concept.\n\n\n\nJun 18, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nMultiple Linear Regression\n\n\n\nMachine Learning\n\nStatistics\n\n\n\nA simple explanation on a seemingly complicated topic.\n\n\n\nJun 1, 2025\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "AI4ALL Project\n\n\n\nAI\n\nPython\n\nMachine Learning\n\n\n\nComing Soon!\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/multiple-linear-regression/index.html",
+    "href": "posts/multiple-linear-regression/index.html",
+    "title": "Multiple Linear Regression",
+    "section": "",
+    "text": "Before diving into multiple linear regression, let’s dip our toes into linear regression by itself. To put it simply, linear regression creates the line of best fit through 2D data, a concept you probably remember from any basic statistics or early math course. After plotting a number of points on a graph, you draw a line through them using what’s called the least squares approach, which finds the line that minimizes the overall distance between itself and every point. So how does multiple linear regression differ? It takes us from that flat 2D world into 3D, and then 4D, 5D, 6D, and beyond.\nMultiple linear regression is a supervised learning technique used to predict a single numerical outcome by analyzing relationships between multiple input features at once. Take house prices as an example. You don’t have to limit yourself to just one factor like size. Instead, you can factor in size, location, school district quality, and more, all in the same model.\nThis is where things get interesting with larger datasets. Manually picking and choosing which columns or factors to include works fine when you’re dealing with a small, simple dataset, but it quickly becomes tiresome and impractical as things scale up. With something like financial market data, where you might have dozens or hundreds of potential variables, you can’t realistically eyeball which ones matter. That’s when automated feature selection becomes necessary to identify which variables actually move the needle on your output.\nSo what does this actually look like under the hood? At its core, multiple linear regression is just an extension of the simple equation you’d use for a single line: y equals some intercept plus a coefficient times your input, except now you have several inputs, each with its own coefficient. Think of these coefficients as weights that tell you how much pull each factor has on the outcome, while everything else stays constant. Going back to the house price example, if the coefficient for size is large and positive, size has a strong, direct relationship with price. If the coefficient for distance from a major city is negative, price tends to drop the farther out you go.\nLet’s take a look at the equation for multiple linear regression. \n\\[\ny = \\beta_0 + \\beta_1 x_1 + \\beta_2 x_2 + \\cdots + \\beta_n x_n\n\\]\nThis models a continuous outcome y as a linear combination of multiple input variables. Each coefficient represents how much the output changes when that feature increases by one unit (holding all other variables constant), while b0 is the intercept or baseline value. The model learns these coefficients from data by minimizing the difference between predicted and actual values. \nMultiple regression allows you to isolate each variable’s effect and see which ones have more pull. One caveat worth keeping in mind: not every variable in your model is pulling its weight, some might barely move the needle while others overlap too much with each other, which is usually the next thing to evaluate once your model is built."
+  },
+  {
+    "objectID": "posts/multiple-linear-regression/index.html#what-is-linear-regression",
+    "href": "posts/multiple-linear-regression/index.html#what-is-linear-regression",
+    "title": "Multiple Linear Regression",
+    "section": "",
+    "text": "Before diving into multiple linear regression, let’s dip our toes into linear regression by itself. To put it simply, linear regression creates the line of best fit through 2D data, a concept you probably remember from any basic statistics or early math course. After plotting a number of points on a graph, you draw a line through them using what’s called the least squares approach, which finds the line that minimizes the overall distance between itself and every point. So how does multiple linear regression differ? It takes us from that flat 2D world into 3D, and then 4D, 5D, 6D, and beyond.\nMultiple linear regression is a supervised learning technique used to predict a single numerical outcome by analyzing relationships between multiple input features at once. Take house prices as an example. You don’t have to limit yourself to just one factor like size. Instead, you can factor in size, location, school district quality, and more, all in the same model.\nThis is where things get interesting with larger datasets. Manually picking and choosing which columns or factors to include works fine when you’re dealing with a small, simple dataset, but it quickly becomes tiresome and impractical as things scale up. With something like financial market data, where you might have dozens or hundreds of potential variables, you can’t realistically eyeball which ones matter. That’s when automated feature selection becomes necessary to identify which variables actually move the needle on your output.\nSo what does this actually look like under the hood? At its core, multiple linear regression is just an extension of the simple equation you’d use for a single line: y equals some intercept plus a coefficient times your input, except now you have several inputs, each with its own coefficient. Think of these coefficients as weights that tell you how much pull each factor has on the outcome, while everything else stays constant. Going back to the house price example, if the coefficient for size is large and positive, size has a strong, direct relationship with price. If the coefficient for distance from a major city is negative, price tends to drop the farther out you go.\nLet’s take a look at the equation for multiple linear regression. \n\\[\ny = \\beta_0 + \\beta_1 x_1 + \\beta_2 x_2 + \\cdots + \\beta_n x_n\n\\]\nThis models a continuous outcome y as a linear combination of multiple input variables. Each coefficient represents how much the output changes when that feature increases by one unit (holding all other variables constant), while b0 is the intercept or baseline value. The model learns these coefficients from data by minimizing the difference between predicted and actual values. \nMultiple regression allows you to isolate each variable’s effect and see which ones have more pull. One caveat worth keeping in mind: not every variable in your model is pulling its weight, some might barely move the needle while others overlap too much with each other, which is usually the next thing to evaluate once your model is built."
+  },
+  {
+    "objectID": "posts/multiple-linear-regression/logistic-regression/index.html",
+    "href": "posts/multiple-linear-regression/logistic-regression/index.html",
+    "title": "Logistic Regression",
+    "section": "",
+    "text": "Logistic regression is a little different from multiple linear regression. It is a supervised learning technique used for classification problems, and is used in the 2d world.\n\n\nBut wait… why can’t we use linear regression instead if it is 2d? That is because some problems have categorical variables, such as yes/no, veg/non-veg, etc, instead of continuous values. In that case, you need logistic regression because it is used for binary classification where the output can be one of two possible categories, and uses a sigmoid function to convert inputs into a probability value between 0 and 1. On the contrary, a linear regression model can output impossible values, such as decimals or negative values. \n\n\n\n\n\n\n\n\n\nLinear Regression\nLogistic Regression\n\n\n\n\nPurpose\nRegression\nClassification\n\n\nPredicts\nContinuous values\nA probability (0 or 1)\n\n\nOutput\nCan be any real number\nBounded between 0 and 1\n\n\nFormula\n\\(y = mx + b\\)\n\\(\\text{sigmoid}(z) = \\frac{1}{1 + e^{-z}}\\)\n\n\n\n\n\n\nTo think about it simply, linear regression predicts how much, while logistic regression predicts which class (hence probabilities). Take a look at the sigmoid part of the logistic regression formula. That is what the graph looks like: a sigmoid, or a graph that resembles the letter “s”. \nLet’s take a closer look into the equation. The variable \\(z\\) is basically a weighted sum of the inputs, which can be written as:\n\\[z = \\beta_0 + \\beta_1 x\\]\nMore generally, any number of components can be added. Conceptually, \\(z\\) can be thought of as a score the model computes before turning it into a probability, where each feature \\(x_i\\) contributes to the score, and each coefficient \\(\\beta_i\\) tells you how important that feature is.\nThe best way to understand this is through an example. Let’s assume that you want to predict whether a student passes an exam based on hours studied. Given our previous equation for \\(z\\), let \\(x\\) be the hours studied, and \\(\\beta_0\\) and \\(\\beta_1\\) be learned coefficients. Learned coefficients are the numerical values that an algorithm calculates given the dataset. The sigmoid function, after replacing \\(z\\) with the equation we found, would look like this:\n\\[p(y = 1 \\mid x) = \\frac{1}{1 + e^{-(\\beta_0 + \\beta_1 x)}}\\]\nHowever, given that the name of this algorithm is logistic regression, this equation does not look logistic. With some rewriting, the model is actually linear in the log-odds (called a logit):\n\\[\\log\\left(\\frac{p}{1-p}\\right) = \\beta_0 + \\beta_1 x\\]\nLet’s say the model learns values \\(\\beta_0 = -4\\) and \\(\\beta_1 = 0.8\\). For a student who studies for 8 hours, if you plug all of these variables into the equation for \\(z\\), you get a score of \\(2.4\\), and then applying the sigmoid function, you get a value of around \\(0.917\\). This means that the student has a 91.7% chance of passing the exam."
+  },
+  {
+    "objectID": "posts/multiple-linear-regression/logistic-regression/index.html#what-is-logistic-regression",
+    "href": "posts/multiple-linear-regression/logistic-regression/index.html#what-is-logistic-regression",
+    "title": "Logistic Regression",
+    "section": "",
+    "text": "Logistic regression is a little different from multiple linear regression. It is a supervised learning technique used for classification problems, and is used in the 2d world.\n\n\nBut wait… why can’t we use linear regression instead if it is 2d? That is because some problems have categorical variables, such as yes/no, veg/non-veg, etc, instead of continuous values. In that case, you need logistic regression because it is used for binary classification where the output can be one of two possible categories, and uses a sigmoid function to convert inputs into a probability value between 0 and 1. On the contrary, a linear regression model can output impossible values, such as decimals or negative values. \n\n\n\n\n\n\n\n\n\nLinear Regression\nLogistic Regression\n\n\n\n\nPurpose\nRegression\nClassification\n\n\nPredicts\nContinuous values\nA probability (0 or 1)\n\n\nOutput\nCan be any real number\nBounded between 0 and 1\n\n\nFormula\n\\(y = mx + b\\)\n\\(\\text{sigmoid}(z) = \\frac{1}{1 + e^{-z}}\\)\n\n\n\n\n\n\nTo think about it simply, linear regression predicts how much, while logistic regression predicts which class (hence probabilities). Take a look at the sigmoid part of the logistic regression formula. That is what the graph looks like: a sigmoid, or a graph that resembles the letter “s”. \nLet’s take a closer look into the equation. The variable \\(z\\) is basically a weighted sum of the inputs, which can be written as:\n\\[z = \\beta_0 + \\beta_1 x\\]\nMore generally, any number of components can be added. Conceptually, \\(z\\) can be thought of as a score the model computes before turning it into a probability, where each feature \\(x_i\\) contributes to the score, and each coefficient \\(\\beta_i\\) tells you how important that feature is.\nThe best way to understand this is through an example. Let’s assume that you want to predict whether a student passes an exam based on hours studied. Given our previous equation for \\(z\\), let \\(x\\) be the hours studied, and \\(\\beta_0\\) and \\(\\beta_1\\) be learned coefficients. Learned coefficients are the numerical values that an algorithm calculates given the dataset. The sigmoid function, after replacing \\(z\\) with the equation we found, would look like this:\n\\[p(y = 1 \\mid x) = \\frac{1}{1 + e^{-(\\beta_0 + \\beta_1 x)}}\\]\nHowever, given that the name of this algorithm is logistic regression, this equation does not look logistic. With some rewriting, the model is actually linear in the log-odds (called a logit):\n\\[\\log\\left(\\frac{p}{1-p}\\right) = \\beta_0 + \\beta_1 x\\]\nLet’s say the model learns values \\(\\beta_0 = -4\\) and \\(\\beta_1 = 0.8\\). For a student who studies for 8 hours, if you plug all of these variables into the equation for \\(z\\), you get a score of \\(2.4\\), and then applying the sigmoid function, you get a value of around \\(0.917\\). This means that the student has a 91.7% chance of passing the exam."
+  },
+  {
+    "objectID": "projects/ai-project.html",
+    "href": "projects/ai-project.html",
+    "title": "AI4ALL Project",
+    "section": "",
+    "text": "Coming Soon!"
+  },
+  {
+    "objectID": "projects/ai-project.html#overview",
+    "href": "projects/ai-project.html#overview",
+    "title": "AI4ALL Project",
+    "section": "",
+    "text": "Coming Soon!"
+  },
+  {
+    "objectID": "projects/ai-project.html#tech-stack",
+    "href": "projects/ai-project.html#tech-stack",
+    "title": "AI4ALL Project",
+    "section": "Tech Stack",
+    "text": "Tech Stack\nPython, TensorFlow, etc."
+  },
+  {
+    "objectID": "projects/ai-project.html#links",
+    "href": "projects/ai-project.html#links",
+    "title": "AI4ALL Project",
+    "section": "Links",
+    "text": "Links\nGitHub"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "About Me",
+    "section": "",
+    "text": "Hi, I’m Shreya Kuthpadi, a student at Rutgers University double majoring in Computer Science and Mathematics. I am passionate about how data, math, and technology come together to solve real-world problems, especially in areas like artificial intelligence and fintech.\nI’m particularly drawn to quantitative and data-driven roles, where I can use mathematical thinking and programming to analyze patterns, understand risk, and make informed decisions. At the same time, I’m still exploring different paths within this space, including data science, analytics, and other tech roles.\nI am open to internships and research opporutinities where I can explore new ideas, and work with others on things that have real impact."
+  },
+  {
+    "objectID": "index.html#section",
+    "href": "index.html#section",
+    "title": "About Me",
+    "section": "",
+    "text": "Contact Me"
+  }
+]

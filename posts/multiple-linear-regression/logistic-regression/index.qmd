@@ -1,0 +1,42 @@
+---
+title: "Logistic Regression"
+description: "An important AI concept."
+date: 2025-06-18
+categories: [Machine Learning, Statistics]
+image: thumbnaillr.png
+---
+
+## What is Logistic Regression?
+
+Logistic regression is a little different from multiple linear regression. It is a supervised learning technique used for classification problems, and is used in the 2d world.
+
+### Linear vs Logistic Regression
+
+But wait... why can't we use linear regression instead if it is 2d? That is because some problems have categorical variables, such as yes/no, veg/non-veg, etc, instead of continuous values. In that case, you need logistic regression because it is used for binary classification where the output can be one of two possible categories, and uses a sigmoid function to convert inputs into a probability value between 0 and 1. On the contrary, a linear regression model can output impossible values, such as decimals or negative values. 
+
+| | **Linear Regression** | **Logistic Regression** |
+|---|---|---|
+| **Purpose** | Regression | Classification |
+| **Predicts** | Continuous values | A probability (0 or 1) |
+| **Output** | Can be any real number | Bounded between 0 and 1 |
+| **Formula** | $y = mx + b$ | $\text{sigmoid}(z) = \frac{1}{1 + e^{-z}}$ |
+
+### Logistic Regression Equation and Example
+
+To think about it simply, linear regression predicts how much, while logistic regression predicts which class (hence probabilities). Take a look at the sigmoid part of the logistic regression formula. That is what the graph looks like: a sigmoid, or a graph that resembles the letter "s". 
+
+Let's take a closer look into the equation. The variable $z$ is basically a weighted sum of the inputs, which can be written as:
+
+$$z = \beta_0 + \beta_1 x$$
+
+More generally, any number of components can be added. Conceptually, $z$ can be thought of as a score the model computes before turning it into a probability, where each feature $x_i$ contributes to the score, and each coefficient $\beta_i$ tells you how important that feature is.
+
+The best way to understand this is through an example. Let's assume that you want to predict whether a student passes an exam based on hours studied. Given our previous equation for $z$, let $x$ be the hours studied, and $\beta_0$ and $\beta_1$ be learned coefficients. Learned coefficients are the numerical values that an algorithm calculates given the dataset. The sigmoid function, after replacing $z$ with the equation we found, would look like this:
+
+$$p(y = 1 \mid x) = \frac{1}{1 + e^{-(\beta_0 + \beta_1 x)}}$$
+
+However, given that the name of this algorithm is logistic regression, this equation does not look logistic. With some rewriting, the model is actually linear in the log-odds (called a logit):
+
+$$\log\left(\frac{p}{1-p}\right) = \beta_0 + \beta_1 x$$
+
+Let's say the model learns values $\beta_0 = -4$ and $\beta_1 = 0.8$. For a student who studies for 8 hours, if you plug all of these variables into the equation for $z$, you get a score of $2.4$, and then applying the sigmoid function, you get a value of around $0.917$. This means that the student has a **91.7% chance** of passing the exam.

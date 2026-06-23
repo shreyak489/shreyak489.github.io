@@ -1,0 +1,30 @@
+project:
+  type: website
+
+website:
+  title: "Shreya Kuthpadi | Portfolio"
+  navbar:
+    left:
+      - href: index.qmd
+        text: About Me
+      - href: projects.qmd
+        text: Projects
+      - href: blog.qmd
+        text: Blog
+    right:
+      - href: resume.pdf
+        text: Resume
+        target: _blank
+
+format:
+  html:
+    theme:
+      - lux
+      - brand
+    css: styles.css
+    toc: true
+    grid:
+      body-width: 1200px
+
+
+
